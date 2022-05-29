@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Bida's Cake</title>
+    <h1>Bida's Cake</h1>
+
+    <img src="img/logo.jpg" alt=my logo class="center">
+
+
+    <p>Let us make your next event taste great!</p>
+        
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+     <nav>
+        <ul class="link">
+           <li><a href="home.html">Home</a></li>
+           <li><a href="Flavor.html">Flavor</a></li>
+           <li><a href="Gallery.html">Gallery</a></li>
+           <li><a href="Shop.html">Shop</a></li>
+           <li><a href="About.html">About</a></li>
+        </ul> 
+      </nav>
+
+        
+      <div id="myBtnContainer">
+       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+       <button class="btn" onclick="filterSelection('birthday cakes')"> Birthday Cakes</button>
+       <button class="btn" onclick="filterSelection('engagement cakes')"> Engagement Cakes</button>
+       <button class="btn" onclick="filterSelection('wedding cakes')">  Wedding Cakes</button>
+       <button class="btn" onclick="filterSelection('number cake')"> Number Cakes</button>
+       <button class="btn" onclick="filterSelection('cupcakes')"> Cupcakes</button>
+       <button class="btn" onclick="filterSelection('cookies')"> Cookies</button>
+       <button class="btn" onclick="filterSelection('heart chocolate')"> Heart Chokolate</button>
+      </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+    <div class="column birthday cakes">
+    <div class="content">
+      <img src="img/halfcake.jpeg" alt="halfcake" style="width: 100%">
+      <h4>Half cake</h4>
+      <p>...</p>
+    </div>
+
+    </div>
+    <div class="column Birthday Cakes">
+    <div class="content">
+      <img src="img/boyscake.jpeg" alt="Lego" style="width:100%">
+      <h4>Lego Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+   <div class="column Birthday Cakes">
+    <div class="content">
+      <img src="img/unicorn.jpeg" alt="unicorn" style="width:100%">
+      <h4>Unicorn Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+
+   <div class="column Engagement Cakes">
+    <div class="content">
+      <img src="img/engagement.jpeg" alt="engagement" style="width:100%">
+      <h4>Engagemnet Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+   <div class="column Birthday Cakes">
+    <div class="content">
+      <img src="img/birthdaycake.jpeg" alt="bear" style="width:100%">
+      <h4>Birthday Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+   <div class="column Birthday Cakes">
+    <div class="content">
+      <img src="img/redcake.jpeg" alt="redcake" style="width:100%">
+      <h4>Birthday Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+
+   <div class="column Wedding Cakes">
+    <div class="content">
+      <img src="img/wedding.jpeg" alt="wedding" style="width:100%">
+      <h4>Wedding Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+   <div class="column Birthday Cakes">
+    <div class="content">
+      <img src="img/chocolatecake.jpeg" alt="chocolate" style="width:100%">
+      <h4>Chokolate Cake</h4>
+      <p>...</p>
+    </div>
+   </div>
+   <div class="column Heart Chokolate">
+    <div class="content">
+      <img src="img/chocolateheart.jpeg" alt="chocolateheart" style="width:100%">
+      <h4>Heart Chokolate</h4>
+      <p>...</p>
+    </div>
+
+    <div class="column Engagement Cakes">
+        <div class="content">
+          <img src="img/engagementcake.jpeg" alt="engagement" style="width:100%">
+          <h4>Engagemnet Cake</h4>
+          <p>...</p>
+
+    <div class="column Cupcakes">
+        <div class="content">
+           <img src="img/cupcakes.jpeg" alt="cupcakes" style="width:100%">
+           <h4>Cupcakes</h4>
+           <p>...</p>
+   </div>
+       
+
+
+
+    <footer>
+             
+           
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <h2>Contact us:</h2>
+      <style>
+      .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+     }
+    
+    
+    
+     .fa-facebook {
+      background:#3B5998;
+      color: white;
+     }
+    
+      
+     .fa-instagram {
+      background: #125688;
+      color: white;
+     }
+    
+
+     </style>
+
+     <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+     <a href="https://www.instagram.com/bidas_cake/" class="fa fa-instagram"></a>
+
+    
+    </footer>
+
+  </body>
+
+   
+
+</html>
+
+
+
+<style>
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: pink;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: pink;
+     color: white;
+    }
+
+ 
+</style>
+
+<script>
+    filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
